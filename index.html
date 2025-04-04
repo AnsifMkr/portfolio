@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ansif – Personal Website</title>
+    <meta
+      name="description"
+      content="My name is Ansif, I’m web dev and full stack software engineer. I have a passion for all things technology and design, from software engineering & machine learning to UI/UX & 3D graphics."
+    />
+
+    <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Ansif - Personal Website"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#f6d4b1" />
+
+    <meta property="og:title" content="Ansif – Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://edh.dev/" />
+    <meta property="og:image" content="https://edh.dev/icon/og-img1.png" />
+    <meta
+      name="og:description"
+      content="My name is Ansif, I’m web dev and full stack software engineer. I have a passion for all things technology and design, from software engineering & machine learning to UI/UX & 3D graphics."
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I’m</h3>
+      <h1>Ansif</h1>
+      <ul>
+        <li>Software Engineer</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/ansifmkr/"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8
+                H0.1V5z"
+              />
+              <path
+                d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1
+                c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z"
+              />
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://github.com/AnsifMkr/"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8
+                c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3
+                c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5
+                c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+
+      <div id="tip-scroll">Scroll &#8595;</div>
+    </nav>
+
+    <main>
+      <section>
+        <h1 id="aboutMe">Hi there</h1>
+        <p>
+          My name is Ansif, I’m web dev and full stack software engineer. I have a passion for all
+          things technology and design, from software engineering & machine
+          learning to UI/UX & 3D graphics.
+        </p>
+        <p>
+          I have completed my BTech Degree in EC from LBS College of Engineering, Kasaragod.
+        </p>
+
+        <p>
+          Below are details of some of the projects I have developed over my
+          these years of coding experience.
+        </p>
+      </section>
+
+      <section>
+        <h1 id="projects">Projects</h1>
+        <hr />
+        <h2>Automatic Pharmacy Assistance System</h2>
+        <h3>2024-25</h3>
+        <ul class="skills">
+          <li>MongoDB</li>
+          <li>Express.js</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Arduino Code</li>
+        </ul>
+        <p>
+          This project is primarily designed to assist elderly individuals who suffer from diabetes and often have to endure long waiting times in queues at pharmacies. The main objective of this project is to automate and streamline the process of dispensing medicines, thereby reducing the time and effort required for patients to collect their prescribed medications.
+        </p>
+        <p>
+          <strong>The solution works as follows:</strong> When a doctor prescribes medicines for a patient, the prescription data is directly transmitted to the pharmacist. This enables the pharmacist to prepare and dispense the required medicines in advance. As a result, once the patient has completed their consultation with the doctor, they can directly collect their pre-dispensed medications from the pharmacy without unnecessary delays.
+        </p>
+        <p>
+          By implementing this system, the project aims to enhance convenience, improve efficiency in pharmacies, and reduce the burden on elderly patients who might otherwise struggle with long waiting times.
+        </p>
+        <p><a href="https://web-frontend-jet.vercel.app">Pharmacy Assistant App</a></p>
+        <br />
+        <div class="image">
+          <img
+            src="/src/img/front-page.png"
+            width="100%"
+            alt="Front page of pharmacy assistant system"
+            loading="lazy"
+            style="aspect-ratio: 2443 / 1276"
+          />
+        </div>
+        <br />
+        <div class="image">
+          <img
+            src="/src/img/apas1.jpg"
+            width="100%"
+            alt="1st of hardware side of pharmacy assistant system"
+            loading="lazy"
+            style="aspect-ratio: 2443 / 1276"
+          />
+        </div>
+        <br />
+        <div class="image">
+          <img
+            src="/src/img/apas2.jpg"
+            width="100%"
+            alt="Second of hardware side of pharmacy assistant system"
+            loading="lazy"
+            style="aspect-ratio: 2443 / 1276"
+          />
+        </div>
+        <hr />
+        <h2>Portolio (This Website)</h2>
+        <h3>2025</h3>
+        <ul class="skills">
+          <li>TypeScript</li>
+          <li>WebGL</li>
+          <li>Shader Language</li>
+          <li>Web Dev</li>
+        </ul>
+        <p>
+          This was a project I built for fun over one of my uni breaks, built in
+          TypeScript and THREE.js, it contains a number of nifty features such
+          as: a 3D retro computer that you can interact with, a very simple UNIX
+          shell implementation, a files system implementation, markdown
+          interpreter and renderer, and a text layout engine.
+        </p>
+        <hr />
+        <h2>Smart Irrigation System</h2>
+        <h3>2022-23</h3>
+        <ul class="skills">
+          <li>Arduino Code</li>
+        </ul>
+        <p>
+          This project addresses the issue of uneven water distribution in plantations, where some plants receive more water while others do not get enough. During the summer season, watering needs to be done twice a day to maintain optimal soil moisture levels.</p>
+        <p>
+          To ensure efficient water usage, we use a hydrostatic pressure level sensor to monitor the water level in the well. If the water level falls below a certain threshold, the system will prevent irrigation. The sensor's output is fed into a microcontroller (Arduino Mega 2560) to control the system's operation.
+        </p>
+        <button
+          class="collapse-btn btn"
+          collapsed="true"
+          onclick="this.setAttribute('collapsed', this.getAttribute('collapsed') === 'true'? 'false' : 'true')"
+        >
+          more...
+        </button>
+        <div class="collapse-body">
+          <p>
+            Additionally, soil moisture sensors are placed for each plant to determine whether the soil is wet or dry. A threshold value is set to decide if watering is required. If the soil is dry, the system automatically irrigates the plants.
+          </p>
+          <p>
+            The entire system is fully automated to operate twice a day. To further enhance its functionality, a DS3231 Real-Time Clock (RTC) module is integrated, allowing scheduled irrigation at specific times.This smart irrigation system ensures optimal water usage, prevents overwatering or underwatering, and helps maintain plant health efficiently.
+          </p>
+        </div>
+        <br />
+
+        <div class="image">
+          <img
+            src="/src/img/sis1.jpg"
+            width="100%"
+            alt="Smart Irrigation System photo1"
+            style="aspect-ratio: 1330 / 924"
+          />
+        <br />
+
+        <div class="image">
+          <img
+            src="/src/img/sis2.jpg"
+            width="100%"
+            alt="Smart Irrigation System photo2"
+            style="aspect-ratio: 1330 / 924"
+          />
+        <hr />
+
+        <p>
+            This represents just a small selection of the projects I have worked
+            on over the years. I am constantly exploring new technologies and
+            working on innovative ideas to expand my skill set and contribute to
+            impactful solutions. Stay tuned for more exciting projects in the
+            future!
+        </p>
+      </section>
+
+      <section>
+        <h1 id="contact">Contact</h1>
+        <p style="text-align: center">
+          Reach out on
+          <a href="https://www.linkedin.com/in/ansifmkr/"
+            ><u><b>LinkedIn</b></u></a
+          >
+        </p>
+        <p style="text-align: center">
+          or email me at
+          <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCHrjDlBWLBdksLqhRJgtTtfzRDVnnhsvdHxdgNpNqfCXxRxXmNJdmVRDltfHBtPCwsQdCHg"
+            ><u><b>GMail</b></u></a
+          >
+        </p>
+      </section>
+    </main>
+
+    <input type="text" id="textarea" readonly />
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+    </div>
+    <footer>
+      <div>Developed by Ansif.</div>
+      <div>Computer design based on the Commodore PET 8296.</div>
+      <div>COPYRIGHT ©2025 Ansif.</div>
+    </footer>
+    <script>
+      function closeMenu() {
+        document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+      }
+
+      function toggleMenu() {
+        const nav = document.getElementsByTagName("nav")[0];
+        if (nav.classList.contains("active")) {
+          nav.classList.remove(["active"]);
+        } else {
+          nav.classList.add("active");
+        }
+      }
+    </script>
+    <script
+      fetchpriority="high"
+      src="https://cdn-ts.netlify.app/webgl-helper@3.0.11/webgl-helper.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EDNKHGV4HB");
+      gtag("event", "origin", { name: window.origin });
+    </script>
+  </body>
+</html>
