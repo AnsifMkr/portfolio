@@ -3,7 +3,7 @@
 
 
 # Help
-### EDSH is just like BASH except much more limited.
+### Shell is just like BASH except much more limited.
 
 ## • Type*ls* to list directory contents
 
@@ -17,5 +17,5 @@
 
 
 ## All commands
-### EDSH, version 0.2.1 
+### Shell, version 0.2.1 
 
